@@ -37,10 +37,7 @@ namespace Semana_11
             {"tema", "point"},
             {"gobierno", "government"},
             {"empresa", "company"},
-            {"compañía", "company"},
-            {"hola", "hello"},
-            {"como", "as"},
-            {"estas", "are"}
+            {"compañía", "company"}
         };
 
             // Bucle principal que mantiene el programa en funcionamiento hasta que el usuario decida salir.
@@ -51,7 +48,7 @@ namespace Semana_11
                 Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                 Console.WriteLine("+             UNIVERSIDAD ESTATAL AMAZÓNICA           +");
                 Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-                Console.WriteLine();
+                Console.WriteLine("             DICCIONARIO ESPAÑOL-INGLES                ");
                 Console.WriteLine("=======================================================");
                 Console.WriteLine("1. Traducir una frase");
                 Console.WriteLine("2. Ingresar más palabras al diccionario");
@@ -87,12 +84,12 @@ namespace Semana_11
                             }
                             else
                             {
-                                // Si no existe, se deja la palabra tal como está.
+                                // Si no existe, se deja la palabra tal como está (en español).
                                 fraseTraducida += palabra + " ";
                             }
                         }
 
-                        // Se muestra la frase traducida al usuario.
+                        // Se muestra la frase completa, con las palabras traducidas y las no traducidas tal cual.
                         Console.WriteLine("Su frase traducida es: " + fraseTraducida.Trim());
                         break;
 
